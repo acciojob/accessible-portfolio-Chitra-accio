@@ -3,12 +3,57 @@
 <html>
 
 <head>
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+	<header>
+		<h1 role="heading">Harisha</h1>
+	</header>
+		<nav role="navigation" aria-label="Main Navigation">
+			<ul role="list">
+				<li role="listitem"><a href="#About">About</a></li>
+				<li role="listitem"><a href="#Contact">Contact</a></li>
+				<li role="listitem"><a href="#Portfolio">Portfolio</a></li>
+			</ul>
+		</nav>
+
+	<section id="About">
+		<h2 role="heading">About Me</h2>
+		<img src="https://images.unsplash.com/photo-1652126176790-63d816be1d51?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="myself" role="img" width="300px">
+        <p>In my line of work, I always make sure
+that every written content passes the
+standards of the company before
+publishing. I can spot minimal to the
+most glaring of errors in written
+content and revise what needs to be
+revised. In addition to that, I read
+books to pass the time and broaden my
+imagination.</p>			
+		</section>
+<section id="Contact">
+	<h2 role="heading">Contact Me</h2>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" aria-required="true">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" aria-required="true">
+		<label for="message">Message</label>
+		<textarea id="message" name="message" aria-required="true"></textarea>
+		<button type="submit">Submit</button>
+	</form>
+</section>
+	<section id="Portfolio">
+		<h2 role="heading">My Work</h2>
+		<ul>
+			<li role="listitem">Project 1: Beagle</li>
+			<li role="listitem">Project 2: Signup Form</li>
+			<li role="listitem">Project 3: Restaurant UI</li>
+		</ul>
+	</section>
+<script type="text/javascript" src="./script.js">
 </script>
 
 </body>

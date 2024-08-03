@@ -1,2 +1,8 @@
 
-/* Your CSS Code here. */
+nav ul{
+	margin:0;
+	padding:0;
+	display:flex;
+	justify-content:right;
+	background-color:lavender;
+}
